@@ -1,19 +1,20 @@
 # SalesforceToSql
-Data Transfer From Salesforce to MS SQL Server
+**Data Transfer From Salesforce to MS SQL Server**
 
 This is a simple tool that copied data from Salesforce to MS SQL Server. This handles the below:-
 1. Python - Automatic schema creation for Salesforce Table on SQL Server.
 2. Python - Dump Salesforce tables to CSV's using Bulk API 2.0
 3. Powershell - Import CSV's using dbatools.io to SQL Server
 
-Requirements
+**Requirements**
 1. Install dbatools.io with the Powershell command Install-Module dbatools
 2. Install ODBC Driver 17 For SQL Server. If you have 18 or a latest one then the Python code would need to be changed for this version.
 3. Install requirements.txt for Python using the command pip install -r requirements.txt
 
-Getting Started
+**Getting Started**
 1. Modify Configurable Parameters, SQL Server connection details and Salesforce credentials in the python code and run to dump CSV's of data for the tables that are mentioned.
 2. Modify Configurable Parameters and SQL Server connection details in the powershell code to ingest data to SQL Server.
+
 
 Though the code is self descriptive, I would highlight a few things that would be important to get started:-
 1. The code has been tested on Windows only.
